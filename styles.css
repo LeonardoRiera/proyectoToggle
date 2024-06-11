@@ -81,7 +81,7 @@
 
 @keyframes cambiarModo {
     0%{ left: 20vmax; top: 0.1vmax;}
-    100%{ left: 1vmax; top:0.1vmax;}
+    100%{ left: 0.2vmax; top:0.1vmax;}
 }
 
 
@@ -112,7 +112,7 @@
 
 
 @keyframes cambiarModo2 {
-    0%{ left: 1vmax; top: 0.1vmax;}
+    0%{ left: 0.2vmax; top: 0.1vmax;}
     100%{ left: 20vmax; top:0.1vmax;}
 }
 
