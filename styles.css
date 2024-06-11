@@ -73,6 +73,8 @@
     animation-fill-mode: forwards; /* Mantener la posición final */
     cursor: pointer;
     user-select: none;
+    -webkit-tap-highlight-color: transparent; /* Evita el resaltado en dispositivos táctiles */
+    touch-action: manipulation; /* Mejora la respuesta táctil y evita ciertos gestos predeterminados */
 
 }
 
@@ -103,6 +105,8 @@
     animation-fill-mode: forwards; /* Mantener la posición final */
     cursor: pointer;
     user-select: none;
+    -webkit-tap-highlight-color: transparent; /* Evita el resaltado en dispositivos táctiles */
+    touch-action: manipulation; /* Mejora la respuesta táctil y evita ciertos gestos predeterminados */
 
 }
 
