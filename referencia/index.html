@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ejercicio transicion</title>
+        <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+        body {
+            background: linear-gradient(to right, #cb02b0, #14fbff);
+        }
+
+
+
+        @keyframes rotacion {
+            from {transform: rotateZ(0deg);
+
+            }
+
+            to {transform: rotateZ(360deg); 
+
+            }
+        }
+
+
+
+
+        section {
+            
+            width: 95%;
+            margin: auto;
+            height: 96vmin;
+            background-color: rgba(0, 0, 0, 0.626);
+            border-radius: 20px;
+            
+            margin-top: 30px;
+            
+            
+        }
+
+
+
+        div {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+
+
+
+        .logouno {
+            height: 300px;
+            position: absolute;
+            
+            padding: 0%;
+            top: 200px;
+            animation-name: rotacion;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            
+            
+
+        }
+
+        /* segundo bloque traslacion */
+
+
+        .contenedor {
+            width: 95%;
+            margin: auto;
+            height: 96vmin;
+            background-color: rgba(0, 0, 0, 0.592);
+            border-radius: 20px;
+            
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+            
+        }
+
+
+        .logodos {
+            height: 250px;
+            position: absolute;
+            
+            padding: 0%;
+            animation-name: caminante;
+            animation-duration: 5s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+        }
+
+        @keyframes caminante {
+            0%{ left: 200px; top: 800px;}
+            25%{ left: 1000px; top:800px;}
+            50%{ left: 1000px; top: 1190px;}
+            75%{ left:200px; top: 1190px;}
+            100%{ left: 200px; top: 800px;}
+        }
+
+
+        /* animacion3 */
+        
+        .animacion3 {
+
+            width: 95%;
+            margin: auto;
+            height: 96vmin;
+            background:linear-gradient(45deg, #05012cde,#b4007ed0, #ff8800be , #ff8738c5 );
+            border-radius: 20px;
+            
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+
+        }
+
+        fondo-animado {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* overflow: hidden; */
+            z-index: -1;
+            
+
+        }
+
+       .anima {
+        border: 0;
+        display: block;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        background-color: aliceblue;
+        animation: vuelta 7s linear infinite normal both;
+       }
+
+       .class1 {
+        width: 100px;
+        height: 100px;
+        bottom: -100px;
+        background-color: rgb(55, 255, 0);
+       }
+
+       .class2 {
+        width: 70px;
+        height: 70px;
+        bottom: -70px;
+        background-color: rgb(0, 179, 255);
+       }
+
+       .class3 {
+        width: 50px;
+        height: 50px;
+        bottom: -50px;
+        background-color: rgb(255, 0, 221);
+       }
+
+       .class4 {
+        width: 20px;
+        height: 20px;
+        bottom: -20px;
+        background-color: rgb(255, 0, 0);
+       }
+        
+       @keyframes vuelta {
+            from {
+                transform: rotatez(0deg);
+                bottom: 0;
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 90px;
+            }
+            to {
+                transform: rotatez(360deg);
+                bottom: calc(100% + 100px);
+                opacity: 0;
+            }
+        } 
+        
+        
+       .fondo-animado span:nth-child(1) {
+            left: 5%;
+        }
+
+        .fondo-animado span:nth-child(2) {
+            left: 50%;
+        }
+
+
+        /* boton prueba */
+
+
+        button {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            border: none;
+            background: none;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button::before {
+            margin-left: auto;
+        }
+
+        button::after, button::before {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            transition: 0.5s;
+        }
+
+        button:hover::after, button:hover::before {
+         width: 100%;
+        }
+
+
+        
+
+
+    </style>
+
+
+    </head>
+    <body>
+        <!-- tomate girando -->
+    <section>
+        <div>
+            <img class="logouno" src="./img/logo.png" alt="logo tomate giratorio">
+        </div>
+    </section>
+
+    <!-- tomate translate -->
+
+    <div class="contenedor">
+
+        <img class="logodos"  src="./img/logodos.png" alt="logo tomate viajero">
+
+    </div>
+
+    <!--  -->
+
+    <div class="animacion3">
+        <div class="fondo-animado">
+            
+            <span class="anima class1"></span>
+            <span class="anima class2"></span>
+            <span class="anima class3"></span>
+            <span class="anima class4"></span>
+    
+
+    
+            <span class="anima class1"></span>
+            <span class="anima class2"></span>
+            <span class="anima class3"></span>
+            <span class="anima class4"></span>
+    
+    
+            <span class="anima class1"></span>
+            <span class="anima class2"></span>
+            <span class="anima class3"></span>
+            <span class="anima class4"></span>      
+            
+        </div>
+
+        <div>
+            <button>
+                HOVER ME
+            </button>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+        
+    </body>
+</html>

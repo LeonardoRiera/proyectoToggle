@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height:730px;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bodyDia {
+    height: 730px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contenedor {
+   
+    height: 17.02vmax;
+    width: 36.65vmax;
+    background-color: rgb(21, 21, 21);
+    border-radius: 120px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+
+.contenedorDia {
+   
+    height: 17.02vmax;
+    width: 36.65vmax;
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    box-shadow: inset 0 0 20px rgb(70, 69, 69);
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.boton {
+    
+    border-radius: 50%;
+    width: 15vmax;
+    height: 15vmax;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 5px solid rgb(80, 80, 80);
+    background: linear-gradient(to top, rgb(25, 25, 25) 35%, rgb(64, 64, 64));
+    position: relative;
+    animation-name: cambiarModo;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: ; */
+    animation-timing-function: linear;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards; /* Mantener la posición final */
+    cursor: pointer;
+
+}
+
+
+@keyframes cambiarModo {
+    0%{ left: 20vmax; top: 0.1vmax;}
+    100%{ left: 1vmax; top:0.1vmax;}
+}
+
+
+
+
+.botonDia {
+    
+    border-radius: 50%;
+    width: 15vmax;
+    height: 15vmax;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 5px solid rgb(186, 186, 186);
+    background: linear-gradient(to top, rgb(255, 255, 255), rgb(192, 192, 192) 70%);
+    position: relative;
+    animation-name: cambiarModo2;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: ; */
+    animation-timing-function: linear;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards; /* Mantener la posición final */
+    cursor: pointer;
+
+}
+
+
+@keyframes cambiarModo2 {
+    0%{ left: 1vmax; top: 0.1vmax;}
+    100%{ left: 20vmax; top:0.1vmax;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
