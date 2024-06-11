@@ -72,6 +72,7 @@
     /* animation-delay: 1s; */
     animation-fill-mode: forwards; /* Mantener la posición final */
     cursor: pointer;
+    user-select: none;
 
 }
 
@@ -101,6 +102,7 @@
     /* animation-delay: 1s; */
     animation-fill-mode: forwards; /* Mantener la posición final */
     cursor: pointer;
+    user-select: none;
 
 }
 
